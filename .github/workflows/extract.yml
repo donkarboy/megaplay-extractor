@@ -1,0 +1,65 @@
+name: Extract M3U8 Streams
+
+on:
+  # ── manual trigger (main use-case) ──────────────────────────────────────
+  workflow_dispatch:
+    inputs:
+      mal_id:
+        description: "MAL ID (required)"
+        required: true
+        type: string
+      episode:
+        description: |
+          Episode(s) to fetch (optional — leave blank for ALL episodes).
+          Accepted formats: single "5", range "1-12", list "1,3,7", mixed "1,5-8,10"
+        required: false
+        type: string
+        default: ""
+
+  # ── schedule: run daily to refresh existing streams/*.json files ─────────
+  # (comment out if you don't want automatic refresh)
+  # schedule:
+  #   - cron: "0 3 * * *"   # 03:00 UTC every day
+
+jobs:
+  extract:
+    name: "MAL ${{ inputs.mal_id }} — ep ${{ inputs.episode || 'ALL' }}"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the updated JSON
+
+    steps:
+      # ── 1. checkout ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # ── 2. Python setup ────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # ── 3. run extractor ───────────────────────────────────────────────────
+      - name: Run extractor
+        run: |
+          ARGS="--mal-id ${{ inputs.mal_id }}"
+          if [ -n "${{ inputs.episode }}" ]; then
+            ARGS="$ARGS --episode ${{ inputs.episode }}"
+          fi
+          echo "Running: python extractor.py $ARGS"
+          python extractor.py $ARGS
+
+      # ── 4. commit & push ───────────────────────────────────────────────────
+      - name: Commit and push JSON
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add streams/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update streams for MAL ${{ inputs.mal_id }} ep ${{ inputs.episode || 'ALL' }}"
+            git push
+          fi
