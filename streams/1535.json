@@ -1,0 +1,2374 @@
+{
+  "mal_id": 1535,
+  "total_episodes": 37,
+  "episodes": {
+    "1": {
+      "mal_id": 1535,
+      "episode": 1,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/a4c39abcf0e3bf1ead6970accd8cc8a7/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1357
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/a4c39abcf0e3bf1ead6970accd8cc8a7/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1372970",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1357
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/ab29d7ce2324806b6e3d47a082719a9d/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1357
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/ab29d7ce2324806b6e3d47a082719a9d/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1372896",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1357
+        }
+      }
+    },
+    "2": {
+      "mal_id": 1535,
+      "episode": 2,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/511ea8a2f44b333df86dd4bcbe0142a0/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/511ea8a2f44b333df86dd4bcbe0142a0/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1370854",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d7a9b13c2e34dfcad466df6a6f5b8fc6/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d7a9b13c2e34dfcad466df6a6f5b8fc6/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1371043",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "3": {
+      "mal_id": 1535,
+      "episode": 3,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/094477622a05d45e4bcfc3d3980a4d96/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/094477622a05d45e4bcfc3d3980a4d96/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1213458",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d348e7309a15f6a62e332926f391eebb/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d348e7309a15f6a62e332926f391eebb/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1213517",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      }
+    },
+    "4": {
+      "mal_id": 1535,
+      "episode": 4,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/718bdd279a06f93b3d956604ca341ffe/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/718bdd279a06f93b3d956604ca341ffe/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1222405",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/2a7a4464e93aa03eaf0655fb7fd1af9e/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/2a7a4464e93aa03eaf0655fb7fd1af9e/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1222428",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "5": {
+      "mal_id": 1535,
+      "episode": 5,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/ecd049998cb7705bd0f5f3a86364af62/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/ecd049998cb7705bd0f5f3a86364af62/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1126589",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/7add39e718f4ab436d5a017060fd98c4/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/7add39e718f4ab436d5a017060fd98c4/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1126587",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      }
+    },
+    "6": {
+      "mal_id": 1535,
+      "episode": 6,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/e79c0893480e0464cad3588563070263/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/e79c0893480e0464cad3588563070263/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1345063",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/97c52b90815a8b47b40cff502410cd7f/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/97c52b90815a8b47b40cff502410cd7f/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1344915",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      }
+    },
+    "7": {
+      "mal_id": 1535,
+      "episode": 7,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/ac2d13b8bc6f64ac065d7c0c47ab1c2d/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/ac2d13b8bc6f64ac065d7c0c47ab1c2d/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1317769",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/948feae0c1664d74f8aa35c863f26249/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/948feae0c1664d74f8aa35c863f26249/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1317644",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      }
+    },
+    "8": {
+      "mal_id": 1535,
+      "episode": 8,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/22eb290a8f6a037372a290149956e025/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/22eb290a8f6a037372a290149956e025/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1467862",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/2912a8d425ac380b6d23a5b7c0131805/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/2912a8d425ac380b6d23a5b7c0131805/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1467794",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "9": {
+      "mal_id": 1535,
+      "episode": 9,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/3de748e31a0d4c15471a63f627030ad1/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/3de748e31a0d4c15471a63f627030ad1/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1386590",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/8dca8f9e520c6c3fc56e3b3f3f03abad/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/8dca8f9e520c6c3fc56e3b3f3f03abad/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1386396",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "10": {
+      "mal_id": 1535,
+      "episode": 10,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/f24450069bf22c9adf2b27c629584acc/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/f24450069bf22c9adf2b27c629584acc/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1395078",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/212a2c2325c674122d2049ad72780910/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/212a2c2325c674122d2049ad72780910/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1394896",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "11": {
+      "mal_id": 1535,
+      "episode": 11,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d1e5b4b54b89bd3f5990f634d6fbecb9/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/d1e5b4b54b89bd3f5990f634d6fbecb9/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1390961",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/fd5bb73014371014f53a9b4481b24bb9/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/fd5bb73014371014f53a9b4481b24bb9/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1390972",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "12": {
+      "mal_id": 1535,
+      "episode": 12,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/5c9929d1f5b92d26dc7acd02472fd5e4/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/5c9929d1f5b92d26dc7acd02472fd5e4/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1285726",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/9ad4aa7d51cc9c2ab11195b223e6f540/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/9ad4aa7d51cc9c2ab11195b223e6f540/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1285638",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "13": {
+      "mal_id": 1535,
+      "episode": 13,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/c192f3ac083d8d0ce23d15afc60a10f7/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/c192f3ac083d8d0ce23d15afc60a10f7/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1338468",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/8804094c2416a84acced7b34e4d83f7c/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/8804094c2416a84acced7b34e4d83f7c/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1338447",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      }
+    },
+    "14": {
+      "mal_id": 1535,
+      "episode": 14,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/ea4835375a02e8c863b7e31c27fe88d7/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/ea4835375a02e8c863b7e31c27fe88d7/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1233826",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3b86f703f6cb2fecfdb82af07dcff747/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3b86f703f6cb2fecfdb82af07dcff747/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1233823",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1288,
+          "end": 1358
+        }
+      }
+    },
+    "15": {
+      "mal_id": 1535,
+      "episode": 15,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/b495a70b6cee48f7d1ccfe8967aae2ce/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/b495a70b6cee48f7d1ccfe8967aae2ce/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1359878",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/30a80b682d8e9b5f7312bbbbb3242f93/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/30a80b682d8e9b5f7312bbbbb3242f93/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1359827",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1356
+        }
+      }
+    },
+    "16": {
+      "mal_id": 1535,
+      "episode": 16,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/ff4b69f69cd3ff7ff34e531a7218e845/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/ff4b69f69cd3ff7ff34e531a7218e845/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1294724",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/b6a925f0a97abb890f7fe6d46bec1a25/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/b6a925f0a97abb890f7fe6d46bec1a25/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1294806",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "17": {
+      "mal_id": 1535,
+      "episode": 17,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/fb764d40e9784081b6c497684527b654/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/fb764d40e9784081b6c497684527b654/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1415045",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/f27e5cb2a1a46bc57168e3205b70f6c8/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/f27e5cb2a1a46bc57168e3205b70f6c8/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1415056",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "18": {
+      "mal_id": 1535,
+      "episode": 18,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/1763c87d2acae85b53ef3d28153534f6/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/1763c87d2acae85b53ef3d28153534f6/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1300536",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/44b72838220b5769651969faf002935e/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/44b72838220b5769651969faf002935e/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1300549",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "19": {
+      "mal_id": 1535,
+      "episode": 19,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/41bab04ae79859eb4f4c570e64e4da81/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/41bab04ae79859eb4f4c570e64e4da81/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1345665",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/cdc9c823d5f0da89c659de8a7723a4e8/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/cdc9c823d5f0da89c659de8a7723a4e8/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1345629",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "20": {
+      "mal_id": 1535,
+      "episode": 20,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/9a9d1cabbfb8f44f2ef8106950888bb8/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/9a9d1cabbfb8f44f2ef8106950888bb8/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1261865",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/c6059895ecc43a0e594e09e05ccc1105/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/c6059895ecc43a0e594e09e05ccc1105/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1261959",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "21": {
+      "mal_id": 1535,
+      "episode": 21,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/db0d789597ca980b7ff73bb77f86ec46/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/db0d789597ca980b7ff73bb77f86ec46/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1183031",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/65c2658c94d33ae7ae90609e8556bdac/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/65c2658c94d33ae7ae90609e8556bdac/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1182926",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "22": {
+      "mal_id": 1535,
+      "episode": 22,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/993924f85b8f9d7666538c8393090b68/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1283,
+          "end": 1354
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/993924f85b8f9d7666538c8393090b68/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1229091",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1283,
+          "end": 1354
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3d253765420fa27e7b73787e49d23dca/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1283,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3d253765420fa27e7b73787e49d23dca/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1229166",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1283,
+          "end": 1355
+        }
+      }
+    },
+    "23": {
+      "mal_id": 1535,
+      "episode": 23,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/2707c4b708684cab9467f92efc6b2e3d/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/2707c4b708684cab9467f92efc6b2e3d/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1357882",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/58495bc0804259b4e03f8f8fcf221f54/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/58495bc0804259b4e03f8f8fcf221f54/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1357931",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "24": {
+      "mal_id": 1535,
+      "episode": 24,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/b452c11bfc89d73e5aba31d6a9b2e2a8/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/b452c11bfc89d73e5aba31d6a9b2e2a8/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1300618",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/6199f5417661f474a65b7975c3da50fb/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/6199f5417661f474a65b7975c3da50fb/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1300646",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 84
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      }
+    },
+    "25": {
+      "mal_id": 1535,
+      "episode": 25,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/bc5b2f542e08a82c5cea93495aa1e2ec/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/bc5b2f542e08a82c5cea93495aa1e2ec/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1587019",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/4b663c520e72a3f0ee40945906a6766d/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/4b663c520e72a3f0ee40945906a6766d/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1587092",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1356
+        }
+      }
+    },
+    "26": {
+      "mal_id": 1535,
+      "episode": 26,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/78785d447c851903c14dd40ce5497d89/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/78785d447c851903c14dd40ce5497d89/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1546978",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/4d24282d5a96760b4038109c65aab266/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/4d24282d5a96760b4038109c65aab266/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1547037",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      }
+    },
+    "27": {
+      "mal_id": 1535,
+      "episode": 27,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/bf05b525d9d554e1ae55e69e9aefd522/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/bf05b525d9d554e1ae55e69e9aefd522/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1204042",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/16d5bdd594a9aa1e4393150dc39ea07b/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/16d5bdd594a9aa1e4393150dc39ea07b/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1204002",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "28": {
+      "mal_id": 1535,
+      "episode": 28,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/5297b63ab753a5da2918ac65d99bf5b7/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/5297b63ab753a5da2918ac65d99bf5b7/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1419675",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/84cf4cf0d5793b8638252f96b62b0991/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/84cf4cf0d5793b8638252f96b62b0991/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1420099",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "29": {
+      "mal_id": 1535,
+      "episode": 29,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/beb9ad86d62420b9db21ae445559e27b/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/beb9ad86d62420b9db21ae445559e27b/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1384687",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/b66a2313fa3e5d3b21c5daedf4a3905e/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/b66a2313fa3e5d3b21c5daedf4a3905e/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1384610",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      }
+    },
+    "30": {
+      "mal_id": 1535,
+      "episode": 30,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/a4ae066aa8c1c165425025ebee9eda00/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/a4ae066aa8c1c165425025ebee9eda00/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1355385",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/48700d5f7cbb87c40dd213691e4e84a7/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/48700d5f7cbb87c40dd213691e4e84a7/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1355319",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1357
+        }
+      }
+    },
+    "31": {
+      "mal_id": 1535,
+      "episode": 31,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/abe179b466a6816087748e4174d15f5c/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/abe179b466a6816087748e4174d15f5c/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1528558",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/9b2cf4e06cddfbd8b44a88b0a422a46e/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/9b2cf4e06cddfbd8b44a88b0a422a46e/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1528493",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "32": {
+      "mal_id": 1535,
+      "episode": 32,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/12bcf80eb82865e62422c4bcb0f96838/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/12bcf80eb82865e62422c4bcb0f96838/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1550354",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/0258e036147233bd84d94dcd6d34a350/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/0258e036147233bd84d94dcd6d34a350/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1550246",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1285,
+          "end": 1355
+        }
+      }
+    },
+    "33": {
+      "mal_id": 1535,
+      "episode": 33,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3d17ccf0ee3dc1e0d097001677484981/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.site/072b030ba126b2f4b2374f342be9ed44/3d17ccf0ee3dc1e0d097001677484981/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1483839",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/29a2396c6942cd6ac052e4216e023ee8/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/29a2396c6942cd6ac052e4216e023ee8/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1483839",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "34": {
+      "mal_id": 1535,
+      "episode": 34,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/db1cb37f85f80fd8cb16eff9485da433/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/db1cb37f85f80fd8cb16eff9485da433/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1308339",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/26bf395bf2c908a3295365a77717ed4c/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/26bf395bf2c908a3295365a77717ed4c/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1324678",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "35": {
+      "mal_id": 1535,
+      "episode": 35,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/19368adaba019ae7d119206dfa1ffd1d/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.akirax.buzz/072b030ba126b2f4b2374f342be9ed44/19368adaba019ae7d119206dfa1ffd1d/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1398529",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/c1e129c997df8ca1a9033cbb3dcad3f5/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/c1e129c997df8ca1a9033cbb3dcad3f5/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1398641",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1287,
+          "end": 1356
+        }
+      }
+    },
+    "36": {
+      "mal_id": 1535,
+      "episode": 36,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/2de53155d8f3e50bb1304ad0974bb13e/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.shiora.top/072b030ba126b2f4b2374f342be9ed44/2de53155d8f3e50bb1304ad0974bb13e/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1643591",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/dcdf2f31f522baf38a971825c0b41262/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/dcdf2f31f522baf38a971825c0b41262/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1643677",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 1286,
+          "end": 1355
+        }
+      }
+    },
+    "37": {
+      "mal_id": 1535,
+      "episode": 37,
+      "stream_sub_1": {
+        "label": "SUB – Master Playlist",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/a47917ff55de62c93ed4bb9119eeed40/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 0,
+          "end": 0
+        }
+      },
+      "stream_sub_2": {
+        "label": "SUB – 1920x1080",
+        "url": "https://megap.norami.top/072b030ba126b2f4b2374f342be9ed44/a47917ff55de62c93ed4bb9119eeed40/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1533983",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 0,
+          "end": 0
+        }
+      },
+      "stream_dub_3": {
+        "label": "DUB – Master Playlist",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/f565dfb9337219c72fe123caccbf77d2/master.m3u8",
+        "type": "hls",
+        "quality": "master",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 0,
+          "end": 0
+        }
+      },
+      "stream_dub_4": {
+        "label": "DUB – 1920x1080",
+        "url": "https://megap.mikora.top/072b030ba126b2f4b2374f342be9ed44/f565dfb9337219c72fe123caccbf77d2/index-f1-v1-a1.m3u8",
+        "type": "hls",
+        "quality": "1920x1080",
+        "bandwidth": "1533989",
+        "codecs": "avc1.640032,mp4a.40.2",
+        "intro": {
+          "start": 0,
+          "end": 85
+        },
+        "outro": {
+          "start": 0,
+          "end": 0
+        }
+      }
+    }
+  }
+}
