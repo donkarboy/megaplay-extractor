@@ -17,19 +17,19 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
 
-# reuse everything from extractor.py
 from extractor import (
     STREAMS_DIR,
-    extract_episode,
+    extract_episode_flat,
     extract_all_episodes,
-    build_episode_entry,
-    build_full_output,
+    build_single_episode_output,
+    build_multi_episode_output,
     load_existing,
-    save_json,
+    save_json_with_split,
     parse_episode_arg,
 )
 
@@ -51,43 +51,55 @@ def run_batch(config_path: Path) -> None:
         print(f"━━━ [{idx}/{len(entries)}] MAL {mal_id}  episode={episode or 'ALL'} ━━━")
 
         if episode is None:
-            # all episodes
+            # ── all episodes ─────────────────────────────────────────────────
             out_path = STREAMS_DIR / f"{mal_id}.json"
-            all_eps  = extract_all_episodes(mal_id)
-            if all_eps:
-                save_json(out_path, build_full_output(mal_id, all_eps))
+            all_entries, total_eps = extract_all_episodes(mal_id)
+            if all_entries:
+                output = build_multi_episode_output(mal_id, total_eps, all_entries)
+                save_json_with_split(out_path, output)
 
         else:
             ep_list = parse_episode_arg(str(episode))
 
             if len(ep_list) == 1:
+                # ── single episode ───────────────────────────────────────────
                 ep       = ep_list[0]
                 out_path = STREAMS_DIR / f"{mal_id}_ep{ep}.json"
                 print(f"\n[MAL {mal_id}] Extracting episode {ep}…")
-                data     = extract_episode(mal_id, ep)
-                save_json(out_path, build_episode_entry(data))
+                ep_entries = extract_episode_flat(mal_id, ep)
+                output     = build_single_episode_output(mal_id, ep, ep_entries)
+                save_json_with_split(out_path, output)
 
             else:
-                out_path  = STREAMS_DIR / f"{mal_id}.json"
-                extracted = []
+                # ── multiple specific episodes ───────────────────────────────
+                out_path    = STREAMS_DIR / f"{mal_id}.json"
+                all_entries: dict = {}
+                found_eps: set   = set()
+
                 for ep in ep_list:
                     print(f"\n  Episode {ep}…")
-                    d = extract_episode(mal_id, ep)
-                    if any(k.startswith("stream_") for k in d):
-                        extracted.append(d)
+                    ep_entries = extract_episode_flat(mal_id, ep)
+                    if ep_entries:
+                        all_entries.update(ep_entries)
+                        found_eps.add(ep)
                     time.sleep(0.4)
 
                 existing = load_existing(out_path)
-                if existing and "episodes" in existing:
-                    for ep_data in extracted:
-                        existing["episodes"][str(ep_data["episode"])] = ep_data
-                    existing["total_episodes"] = len(existing["episodes"])
-                    save_json(out_path, existing)
+                if existing and any(k not in {"mal_id", "total_episodes"} for k in existing):
+                    existing.update(all_entries)
+                    all_ep_nums = {
+                        int(re.match(r"ep-(\d+)-", k).group(1))
+                        for k in existing
+                        if re.match(r"ep-(\d+)-", k)
+                    }
+                    existing["total_episodes"] = len(all_ep_nums)
+                    save_json_with_split(out_path, existing)
                 else:
-                    save_json(out_path, build_full_output(mal_id, extracted))
+                    output = build_multi_episode_output(mal_id, len(found_eps), all_entries)
+                    save_json_with_split(out_path, output)
 
         print()
-        time.sleep(1)   # pause between MAL IDs
+        time.sleep(1)
 
     print("✅ Batch complete.")
 
