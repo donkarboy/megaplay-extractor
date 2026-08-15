@@ -7,9 +7,24 @@ Usage:
     python extractor.py --mal-id 1735 --episode 1-24   # episode range
     python extractor.py --mal-id 1735 --episode 1,5,9  # specific episodes
 
+Output format (flat keys):
+    {
+      "mal_id": 1535,
+      "total_episodes": 37,
+      "ep-1-sub-1": "https://...",
+      "ep-1-sub-2": "https://...",
+      "ep-1-dub-1": "https://...",
+      ...
+    }
+
 Output is saved to:
-    streams/<mal_id>.json              (single or all)
+    streams/<mal_id>.json              (all episodes, or auto-split parts)
     streams/<mal_id>_ep<N>.json        (when --episode is a single number)
+
+Auto-split: if the output exceeds 20 MB, it is written as
+    streams/<mal_id>_part1.json
+    streams/<mal_id>_part2.json
+    ...
 """
 
 import argparse
@@ -35,8 +50,9 @@ HEADERS = {
     "Referer": BASE + "/",
 }
 STREAMS_DIR = Path("streams")
-RETRY_DELAY = 2   # seconds between retries
+RETRY_DELAY = 2       # seconds between retries
 MAX_RETRIES = 3
+MAX_FILE_BYTES = 20 * 1024 * 1024   # 20 MB
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -66,21 +82,17 @@ def decode_sources(raw: bytes) -> dict:
     MegaPlay returns either:
       • plain JSON
       • base64-encoded JSON (utf-8 or latin-1 encoded before b64)
-    Try all three variants.
     """
-    # 1. plain JSON
     try:
         return json.loads(raw)
     except Exception:
         pass
-    # 2. base64 (utf-8 byte string)
     try:
         padded = raw.strip()
         padded += b"=" * (-len(padded) % 4)
         return json.loads(base64.b64decode(padded))
     except Exception:
         pass
-    # 3. base64 of latin-1 decoded string
     try:
         text = raw.strip().decode("latin-1")
         text += "=" * (-len(text) % 4)
@@ -113,8 +125,9 @@ def get_sources(file_id: str) -> tuple[str, dict | None, dict | None]:
 
 def parse_variants(master_url: str) -> list[dict]:
     """
-    Fetch the HLS master playlist and return a list of quality variants:
-      [{"resolution": "1920x1080", "bandwidth": "...", "url": "..."}, ...]
+    Fetch the HLS master playlist and return a list of quality variants
+    ordered from lowest to highest index (they'll become sub-1, sub-2, …).
+    Each entry: {"resolution": "1920x1080", "bandwidth": "...", "url": "..."}
     """
     try:
         raw = get_bytes(master_url)
@@ -151,80 +164,63 @@ def parse_variants(master_url: str) -> list[dict]:
 
 # ── core extraction ──────────────────────────────────────────────────────────
 
-def extract_episode(mal_id: int, episode: int) -> dict:
+def extract_episode_flat(mal_id: int, episode: int) -> dict:
     """
-    Extract all available streams (sub + dub, master + variants) for one
-    episode.  Returns a dict shaped for JSON serialisation.
-    """
-    result: dict = {
-        "mal_id":  mal_id,
-        "episode": episode,
-    }
+    Extract all streams for one episode and return them as flat key-value pairs
+    using the naming convention:
+        ep-<episode>-<typ>-1  →  master playlist URL  (string)
+        ep-<episode>-<typ>-2  →  variant 1 URL        (string)
+        ep-<episode>-<typ>-3  →  variant 2 URL        (string)
+        …
 
-    stream_index = 1  # global counter across sub/dub so keys stay unique
+    Returns a dict of { "ep-N-sub-1": url, "ep-N-dub-1": url, … }
+    plus a boolean "has_streams" flag (not written to JSON).
+    """
+    entries: dict = {}
 
     for typ in ("sub", "dub"):
         try:
-            fid              = get_file_id(mal_id, episode, typ)
+            fid = get_file_id(mal_id, episode, typ)
             master_url, intro, outro = get_sources(fid)
 
-            # master stream
-            key = f"stream_{typ}_{stream_index}"
-            result[key] = {
-                "label":   f"{typ.upper()} – Master Playlist",
-                "url":     master_url,
-                "type":    "hls",
-                "quality": "master",
-                "intro":   intro,
-                "outro":   outro,
-            }
-            stream_index += 1
+            # index 1 = master playlist
+            idx = 1
+            entries[f"ep-{episode}-{typ}-{idx}"] = master_url
+            idx += 1
 
-            # quality variants
+            # subsequent indices = quality variants
             for v in parse_variants(master_url):
-                key = f"stream_{typ}_{stream_index}"
-                result[key] = {
-                    "label":     f"{typ.upper()} – {v['resolution']}",
-                    "url":       v["url"],
-                    "type":      "hls",
-                    "quality":   v["resolution"],
-                    "bandwidth": v["bandwidth"],
-                    "codecs":    v["codecs"],
-                    "intro":     intro,
-                    "outro":     outro,
-                }
-                stream_index += 1
+                entries[f"ep-{episode}-{typ}-{idx}"] = v["url"]
+                idx += 1
 
-            print(
-                f"  ✓ [{typ.upper()}] {stream_index - 1} stream(s) found "
-                f"(master + {stream_index - 2} variants)"
-            )
+            found = idx - 1
+            print(f"  ✓ [{typ.upper()}] {found} URL(s) (1 master + {found - 1} variants)")
 
         except Exception as exc:
             print(f"  ✗ [{typ.upper()}] skipped — {exc}")
 
-    return result
+    return entries
 
 
-def extract_all_episodes(mal_id: int) -> list[dict]:
+def extract_all_episodes(mal_id: int) -> dict:
     """
-    Probe episodes starting from 1 until two consecutive failures,
-    then return the list of successfully extracted episode dicts.
+    Probe episodes from 1 upward until two consecutive failures.
+    Returns a flat dict of ALL ep-N-sub/dub-M keys and the episode count.
     """
-    results = []
+    all_entries: dict = {}
     episode = 1
     consecutive_fails = 0
+    found_episodes = set()
 
     print(f"\n[MAL {mal_id}] Scanning all episodes…")
 
     while True:
         print(f"\n  Episode {episode}…")
-        data = extract_episode(mal_id, episode)
+        ep_entries = extract_episode_flat(mal_id, episode)
 
-        # check if any stream was found
-        has_streams = any(k.startswith("stream_") for k in data)
-        if has_streams:
-            results.append(data)
+        if ep_entries:
+            all_entries.update(ep_entries)
+            found_episodes.add(episode)
             consecutive_fails = 0
         else:
             consecutive_fails += 1
@@ -234,9 +230,9 @@ def extract_all_episodes(mal_id: int) -> list[dict]:
                 break
 
         episode += 1
-        time.sleep(0.5)   # be polite
+        time.sleep(0.5)
 
-    return results
+    return all_entries, len(found_episodes)
 
 
 # ── JSON persistence ─────────────────────────────────────────────────────────
@@ -251,46 +247,95 @@ def load_existing(path: Path) -> dict:
     return {}
 
 
-def save_json(path: Path, data) -> None:
+def _serialise(data: dict) -> str:
+    return json.dumps(data, indent=2, ensure_ascii=False)
+
+
+def save_json_with_split(base_path: Path, data: dict) -> None:
+    """
+    Write *data* to *base_path*.
+    If the serialised size exceeds MAX_FILE_BYTES, split the episode keys
+    across multiple part files:
+        streams/<mal_id>_part1.json
+        streams/<mal_id>_part2.json
+        …
+    Each part file carries its own "mal_id" and "total_episodes" header keys.
+    """
     STREAMS_DIR.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"\n💾 Saved → {path}")
+    raw = _serialise(data)
+
+    if len(raw.encode("utf-8")) <= MAX_FILE_BYTES:
+        # fits in one file
+        base_path.write_text(raw, encoding="utf-8")
+        print(f"\n💾 Saved → {base_path}  ({len(raw.encode()) / 1024:.1f} KB)")
+        return
+
+    # ── need to split ────────────────────────────────────────────────────────
+    print(f"\n⚠️  Output is {len(raw.encode()) / (1024*1024):.1f} MB — splitting into parts…")
+
+    mal_id         = data.get("mal_id")
+    total_episodes = data.get("total_episodes")
+
+    # collect all ep-N-* keys, grouped by episode number
+    ep_keys: dict[int, list[str]] = {}
+    header_keys = {"mal_id", "total_episodes"}
+    for k in data:
+        if k in header_keys:
+            continue
+        m = re.match(r"ep-(\d+)-", k)
+        if m:
+            ep_num = int(m.group(1))
+            ep_keys.setdefault(ep_num, []).append(k)
+
+    # build parts: keep adding episodes until the part would exceed the limit
+    stem = base_path.stem   # e.g. "1535"
+    part_num = 1
+    current_part: dict = {"mal_id": mal_id, "total_episodes": total_episodes}
+
+    for ep_num in sorted(ep_keys):
+        candidate = dict(current_part)
+        for k in sorted(ep_keys[ep_num]):
+            candidate[k] = data[k]
+
+        if len(_serialise(candidate).encode("utf-8")) > MAX_FILE_BYTES and len(current_part) > 2:
+            # flush current part before adding this episode
+            part_path = STREAMS_DIR / f"{stem}_part{part_num}.json"
+            part_path.write_text(_serialise(current_part), encoding="utf-8")
+            size_kb = part_path.stat().st_size / 1024
+            print(f"  💾 Part {part_num} → {part_path}  ({size_kb:.1f} KB)")
+            part_num += 1
+            current_part = {"mal_id": mal_id, "total_episodes": total_episodes}
+
+        for k in sorted(ep_keys[ep_num]):
+            current_part[k] = data[k]
+
+    # flush the last part
+    if len(current_part) > 2:
+        part_path = STREAMS_DIR / f"{stem}_part{part_num}.json"
+        part_path.write_text(_serialise(current_part), encoding="utf-8")
+        size_kb = part_path.stat().st_size / 1024
+        print(f"  💾 Part {part_num} → {part_path}  ({size_kb:.1f} KB)")
+
+    print(f"\n✅ Split into {part_num} part file(s).")
 
 
-# ── output formatters ────────────────────────────────────────────────────────
+# ── output builders ──────────────────────────────────────────────────────────
 
-def build_episode_entry(ep_data: dict) -> dict:
-    """
-    Flatten one episode extraction into the canonical JSON structure:
-      {
-        "mal_id": ...,
-        "episode": ...,
-        "stream_sub_1": {...},
-        "stream_dub_1": {...},
-        ...
-      }
-    (already in this shape — just return it.)
-    """
-    return ep_data
-
-
-def build_full_output(mal_id: int, episodes: list[dict]) -> dict:
-    """
-    Wrap multiple episodes under a single JSON object:
-      {
-        "mal_id": 1735,
-        "total_episodes": 3,
-        "episodes": { "1": {...}, "2": {...} }
-      }
-    """
+def build_single_episode_output(mal_id: int, episode: int, ep_entries: dict) -> dict:
+    """Wrap a single episode's flat entries in a top-level object."""
     return {
         "mal_id":         mal_id,
-        "total_episodes": len(episodes),
-        "episodes": {
-            str(ep["episode"]): ep
-            for ep in episodes
-        }
+        "total_episodes": 1,
+        **ep_entries,
+    }
+
+
+def build_multi_episode_output(mal_id: int, total_eps: int, all_entries: dict) -> dict:
+    """Wrap all flat entries together with header keys."""
+    return {
+        "mal_id":         mal_id,
+        "total_episodes": total_eps,
+        **all_entries,
     }
 
 
@@ -299,9 +344,9 @@ def build_full_output(mal_id: int, episodes: list[dict]) -> dict:
 def parse_episode_arg(raw: str) -> list[int]:
     """
     Accept:
-      "5"       → [5]
-      "1-12"    → [1,2,...,12]
-      "1,3,7"   → [1,3,7]
+      "5"        → [5]
+      "1-12"     → [1,2,...,12]
+      "1,3,7"    → [1,3,7]
       "1,5-8,10" → [1,5,6,7,8,10]
     """
     episodes = set()
@@ -345,51 +390,63 @@ def main():
     )
     args = parser.parse_args()
 
-    mal_id   = args.mal_id
+    mal_id = args.mal_id
     STREAMS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # ── single or specific episodes ──────────────────────────────────────────
+    # ── single episode ───────────────────────────────────────────────────────
     if args.episode is not None:
         ep_list = parse_episode_arg(args.episode)
 
         if len(ep_list) == 1:
-            # single episode → flat file
             ep = ep_list[0]
             out_path = Path(args.output) if args.output else STREAMS_DIR / f"{mal_id}_ep{ep}.json"
             print(f"\n[MAL {mal_id}] Extracting episode {ep}…")
-            data = extract_episode(mal_id, ep)
-            save_json(out_path, build_episode_entry(data))
+            ep_entries = extract_episode_flat(mal_id, ep)
+            output     = build_single_episode_output(mal_id, ep, ep_entries)
+            save_json_with_split(out_path, output)
 
         else:
-            # multiple episodes → combined file
-            out_path = Path(args.output) if args.output else STREAMS_DIR / f"{mal_id}.json"
+            # ── multiple specific episodes ───────────────────────────────────
+            out_path   = Path(args.output) if args.output else STREAMS_DIR / f"{mal_id}.json"
+            all_entries: dict = {}
+            found_eps: set   = set()
+
             print(f"\n[MAL {mal_id}] Extracting {len(ep_list)} episodes: {ep_list}")
-            extracted = []
             for ep in ep_list:
                 print(f"\n  Episode {ep}…")
-                d = extract_episode(mal_id, ep)
-                if any(k.startswith("stream_") for k in d):
-                    extracted.append(d)
+                ep_entries = extract_episode_flat(mal_id, ep)
+                if ep_entries:
+                    all_entries.update(ep_entries)
+                    found_eps.add(ep)
                 time.sleep(0.4)
 
+            # merge with existing file if present
             existing = load_existing(out_path)
-            # merge into existing if file already present
-            if existing and "episodes" in existing:
-                for ep_data in extracted:
-                    existing["episodes"][str(ep_data["episode"])] = ep_data
-                existing["total_episodes"] = len(existing["episodes"])
-                save_json(out_path, existing)
+            if existing and any(k not in {"mal_id", "total_episodes"} for k in existing):
+                existing.update(all_entries)
+                # recount unique episode numbers from keys
+                all_ep_nums = {
+                    int(re.match(r"ep-(\d+)-", k).group(1))
+                    for k in existing
+                    if re.match(r"ep-(\d+)-", k)
+                }
+                existing["total_episodes"] = len(all_ep_nums)
+                save_json_with_split(out_path, existing)
             else:
-                save_json(out_path, build_full_output(mal_id, extracted))
+                output = build_multi_episode_output(mal_id, len(found_eps), all_entries)
+                save_json_with_split(out_path, output)
 
     # ── all episodes ─────────────────────────────────────────────────────────
     else:
-        out_path = Path(args.output) if args.output else STREAMS_DIR / f"{mal_id}.json"
-        all_eps  = extract_all_episodes(mal_id)
-        if not all_eps:
+        out_path   = Path(args.output) if args.output else STREAMS_DIR / f"{mal_id}.json"
+        all_entries, total_eps = extract_all_episodes(mal_id)
+
+        if not all_entries:
             print("\n[error] No streams found for any episode.")
             sys.exit(1)
-        save_json(out_path, build_full_output(mal_id, all_eps))
+
+        output = build_multi_episode_output(mal_id, total_eps, all_entries)
+        save_json_with_split(out_path, output)
 
     print("\n✅ Done.")
 
