@@ -251,15 +251,17 @@ def _serialise(data: dict) -> str:
     return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-def save_json_with_split(base_path: Path, data: dict) -> None:
+def save_json_with_split(base_path: Path, data: dict, stem_override: str = "") -> None:
     """
     Write *data* to *base_path*.
     If the serialised size exceeds MAX_FILE_BYTES, split the episode keys
-    across multiple part files:
-        streams/<mal_id>_part1.json
-        streams/<mal_id>_part2.json
+    across multiple part files named after *stem_override* (if given) or
+    the base_path stem:
+        streams/megaplay_stream_part1.json
+        streams/megaplay_stream_part2.json
         …
-    Each part file carries its own "mal_id" and "total_episodes" header keys.
+    Each part file carries its own header keys (everything that is not an
+    ep-N-* key).
     """
     STREAMS_DIR.mkdir(parents=True, exist_ok=True)
     raw = _serialise(data)
@@ -273,24 +275,21 @@ def save_json_with_split(base_path: Path, data: dict) -> None:
     # ── need to split ────────────────────────────────────────────────────────
     print(f"\n⚠️  Output is {len(raw.encode()) / (1024*1024):.1f} MB — splitting into parts…")
 
-    mal_id         = data.get("mal_id")
-    total_episodes = data.get("total_episodes")
+    # identify header keys (anything that is not ep-N-*)
+    header_keys = {k: v for k, v in data.items() if not re.match(r"ep-\d+-", k)}
 
     # collect all ep-N-* keys, grouped by episode number
     ep_keys: dict[int, list[str]] = {}
-    header_keys = {"mal_id", "total_episodes"}
     for k in data:
-        if k in header_keys:
-            continue
         m = re.match(r"ep-(\d+)-", k)
         if m:
             ep_num = int(m.group(1))
             ep_keys.setdefault(ep_num, []).append(k)
 
     # build parts: keep adding episodes until the part would exceed the limit
-    stem = base_path.stem   # e.g. "1535"
+    stem = stem_override or base_path.stem   # e.g. "megaplay_stream" or "1535"
     part_num = 1
-    current_part: dict = {"mal_id": mal_id, "total_episodes": total_episodes}
+    current_part: dict = dict(header_keys)  # start each part with header
 
     for ep_num in sorted(ep_keys):
         candidate = dict(current_part)
@@ -304,13 +303,14 @@ def save_json_with_split(base_path: Path, data: dict) -> None:
             size_kb = part_path.stat().st_size / 1024
             print(f"  💾 Part {part_num} → {part_path}  ({size_kb:.1f} KB)")
             part_num += 1
-            current_part = {"mal_id": mal_id, "total_episodes": total_episodes}
+            current_part = dict(header_keys)   # reset with headers only
 
         for k in sorted(ep_keys[ep_num]):
             current_part[k] = data[k]
 
-    # flush the last part
-    if len(current_part) > 2:
+    # flush the last part (has_ep_data = any ep-* key present)
+    has_ep_data = any(re.match(r"ep-\d+-", k) for k in current_part)
+    if has_ep_data:
         part_path = STREAMS_DIR / f"{stem}_part{part_num}.json"
         part_path.write_text(_serialise(current_part), encoding="utf-8")
         size_kb = part_path.stat().st_size / 1024
